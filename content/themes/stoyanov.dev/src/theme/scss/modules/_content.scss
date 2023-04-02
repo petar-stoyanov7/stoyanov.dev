@@ -1,0 +1,152 @@
+.main-container {
+  @include xy-grid-container;
+
+  @include breakpoint(huge) {
+    max-width: 1400px;
+  }
+  @include breakpoint(xhuge) {
+    max-width: 1600px;
+  }
+}
+
+//.main-content {
+//  min-height: calc(100vh - 134px);
+//
+//  @include breakpoint(large) {
+//    min-height: calc(100vh - 95px);
+//  }
+//}
+//.main-content-full-width {
+//  min-height: calc(100vh - 149px);
+//
+//  @include breakpoint(large) {
+//    min-height: calc(100vh - 110px);
+//  }
+//}
+
+.main-grid {
+  @include xy-grid();
+
+  &.sidebar-left {
+    // Place the sidebar below main content on small screens ...
+    @include breakpoint(small) {
+      .main-content { order: 1; }
+      .sidebar { order: 2; }
+    }
+
+    // ... and to the left on medium-up screens, when using the sidebar-left template
+    @include breakpoint(medium) {
+      .main-content { order: 2; }
+      .sidebar { order: 1; }
+    }
+  }
+
+  // Full width template
+  .main-content-full-width {
+    @include xy-cell(12);
+  }
+
+  // Default template
+  .main-content {
+    @include breakpoint(small) {
+      @include xy-cell(12);
+    }
+
+    @include breakpoint(medium) {
+      @include xy-cell(8);
+    }
+  }
+
+  .sidebar {
+    @include breakpoint(small) {
+      @include xy-cell(12);
+    }
+
+    @include breakpoint(medium) {
+      @include xy-cell(4);
+      margin-top: 1rem;
+    }
+
+  }
+}
+
+main {
+  padding-top: 4.4rem;
+  padding-bottom: 4rem;
+  min-height: 100vh;
+
+  article.ps-single a,
+  article.page a:not(.ps-archive__link),
+  article.ps-none a,
+  h1>a,
+  h2>a,
+  h3>a,
+  h4>a,
+  h5>a,
+  h6>a,
+  {
+    border-bottom: 2px solid $medium-gray;
+    background-color: $lighter-gray;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: $light-gray;
+      border-bottom: 2px solid $dark-gray;
+    }
+  }
+}
+
+.wp-block-code {
+  background-color: $black;
+
+  code {
+    background-color: $black;
+    color: #56da56;
+  }
+}
+
+
+.ps-socials {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-weight: 700;
+    margin: 0 auto 15px;
+  }
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  &__link {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    border-bottom: none;
+
+    &.social-facebook {
+      background-image: $social-facebook;
+    }
+    &.social-twitter {
+      background-image: $social-twitter;
+    }
+    &.social-linkedin {
+      background-image: $social-linkedin;
+    }
+
+    &:hover {
+      border: none;
+    }
+  }
+}
+//stupid override for the general anchor rule
+.ps-socials>ul.ps-socials__list>li.ps-socials__item>a.ps-socials__link {
+  border-bottom: none;
+}

@@ -3,7 +3,8 @@ import $ from 'jquery';
 window.$ = $;
 
 /* Example of the custom script imports */
-import './lib/example'; //TODO delete later on
+import './lib/page-navigation';
+import './lib/smooth-scroll';
 
 $(function() {
 });

@@ -11,6 +11,11 @@
 		"build:blocks": "wp-scripts build  --webpack-src-dir=blocks/ --webpack-copy-php --output-path=../lib/blocks/build",
 		"build:theme": "wp-scripts build  --webpack-src-dir=theme/ --config=theme/webpack.config.js"
 	},
+	"keywords": [
+		"Stoyanov",
+		"WordPresS",
+		"Foundation"
+	],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
@@ -27,6 +32,7 @@
 		"stylelint-order": "^6.0.1"
 	},
 	"dependencies": {
+		"foundation-sites": "^6.7.5",
 		"jquery": "^3.6.3",
 		"lodash": "^4.17.21",
 		"motion-ui": "^2.0.4",

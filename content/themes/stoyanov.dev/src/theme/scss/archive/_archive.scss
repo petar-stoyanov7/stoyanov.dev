@@ -1,0 +1,94 @@
+.ps-archives {
+  &__container {
+    margin-bottom: rem-calc(20);
+  }
+
+  &__title {
+    width: 100%;
+    margin-bottom: rem-calc(20);
+  }
+}
+
+.ps-archive {
+  clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%);
+  transition: all 0.5s ease-in-out;
+  min-height: 440px;
+  overflow: hidden;
+
+  &__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #dff5ff;
+  }
+
+  &__header {
+    width: 100%;
+    height: 210px;
+    background-color: #eff6ef;
+    overflow: hidden;
+
+    @include breakpoint(large) {
+      background-color: $white;
+    }
+
+    img {
+      height: 100%;
+      width: auto;
+      object-fit: cover;
+
+      @include breakpoint(huge) {
+        height: 115%;
+      }
+      @include breakpoint(xhuge) {
+        height: 100%;
+      }
+    }
+  }
+
+  &__text {
+    padding: 10px;
+    height: 100%;
+  }
+
+  &__title {
+    min-height: 65px;
+    font-size: 30px;
+    font-weight: 700;
+    color: $black;
+    line-height: 1.1;
+  }
+
+  &:hover {
+    .ps-archive__text {
+      background-color: #dffaff;
+    }
+
+    .ps-archive__link {
+      margin-top: -2px;
+      margin-left: -2px;
+    }
+  }
+}
+
+.ps-search {
+  clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 10% 100%, 0 90%);
+  min-height: 250px;
+
+  .ps-archive__text {
+    padding: 15px;
+  }
+}
+
+.ps-none {
+  background-color: #fff2f2;
+  padding: 20px;
+}
+
+//search
+.ps-searches {
+  &__title {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

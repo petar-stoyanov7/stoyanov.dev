@@ -1,0 +1,6 @@
+[data-whatinput='mouse'] a:focus,
+button:focus
+[data-whatinput='touch'] a:focus,
+button:focus {
+  outline: none;
+}

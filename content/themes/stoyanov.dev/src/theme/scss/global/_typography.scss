@@ -1,0 +1,50 @@
+
+h1, h2, h2.h3, h3, h4 {
+    font-weight: $global-weight-bold;
+}
+
+// Predefined font styles, also available in the backend editor
+$name-marches: (
+    h1: headingone,
+    h2: headingtwo,
+    h3: headingthree,
+    h4: headingfour,
+    h5: headingfive,
+    h6: headingsix,
+);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul
+li,
+ol li,
+blockquote {
+    // Automatically add font sizes for all heading sizes from settings.scss
+    @each $name, $breakpoint in $header-styles {
+        // No media query for the small font size
+        @if $name==small {
+            @each $heading, $size in $breakpoint {
+                &.has-#{map-get($name-marches, $heading)}-font-size {
+                    font-size: rem-calc(map-get($size, 'font-size'));
+                }
+            }
+        } @else {
+            @each $heading, $size in $breakpoint {
+                &.has-#{map-get($name-marches, $heading)}-font-size {
+                    @include breakpoint (#{$name}) {
+                        font-size: rem-calc(map-get($size, 'font-size'));
+                    }
+                }
+            }
+        }
+    }
+
+    // Define addtional font sizes for Gutenberg below
+    &.has-small-font-size {
+      font-size: $small-font-size;
+    }
+}

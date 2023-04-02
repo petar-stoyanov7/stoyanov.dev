@@ -1,15 +1,39 @@
 @charset "utf-8";
-/* Theme's main frontend file */
+@import 'settings';
+@import 'node_modules/foundation-sites/scss/foundation';
 
-/* Theme proprietary files */
+/* Helpers */
+@import 'helpers/inlined_images';
+
+/* Foundation */
+@include foundation-xy-grid-classes;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-close-button;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-pagination;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-flex-classes;
 
 /* Global */
 @import 'global/site-header';
 @import 'global/site-footer';
+@import 'global/typography';
 
 /* Modules */
 @import 'modules/map';
+@import 'modules/content';
+@import 'modules/nav';
 
 /* Components */
 @import 'components/buttons';
 @import 'components/links';
+@import 'components/featured-image';
+
+/* Archive */
+@import 'archive/archive';
+@import 'archive/single';

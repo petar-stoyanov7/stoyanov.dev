@@ -3,7 +3,7 @@
 	"settings": {
 		"browserSync": {
 			"host": "localhost",
-			"proxy": "http://site.url",
+			"proxy": "https://stoyanov.loc",
 			"port": 3000
 		}
 	}
