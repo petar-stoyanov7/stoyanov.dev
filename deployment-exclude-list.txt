@@ -1,0 +1,10 @@
+/.*
+bitbucket-pipelines.yml
+deployment-exclude-list.txt
+wp-content
+content/uploads
+app
+.htaccess
+.htpasswd
+.gitkeep
+node_modules
