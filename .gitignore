@@ -5,13 +5,12 @@
 
 # Node artifact files
 node_modules/
+dist/
 package-lock.json
 
 # WP Core files
 app/
 
-# Source folders
-src/
 
 # Wordpress content directory
 content/uploads/
