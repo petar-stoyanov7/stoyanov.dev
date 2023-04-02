@@ -30,14 +30,6 @@ function pest_scripts_styles()
         false
     );
 
-    wp_enqueue_script(
-        'foundation',
-        get_stylesheet_directory_uri() . '/dist/assets/js/app.js',
-        [],
-        $js_data,
-        true
-    );
-
     //Remove bundled jQuery migrate
     wp_deregister_script('jquery-migrate');
 

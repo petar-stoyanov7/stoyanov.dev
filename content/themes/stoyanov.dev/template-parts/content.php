@@ -1,25 +1,21 @@
 <?php
+
 /**
  * The default template for displaying content
  *
- * @package Pesticide
- * @since Pesticide 0.0.1
+ * Used for both single and index/archive/search.
+ *
+ * @package Stoyanov.dev
+ * @since Stoyanov.dev 0.0.1
  */
 
-$post_class = 'pest-article';
+$post_class = '';
+
 ?>
 
-<article
-    id="<?php the_ID(); ?>"
-    <?php post_class($post_class); ?>
->
-    <div class="pest-article__content">
-        <h1>
-            <?php the_title(); ?>
-        </h1>
-        <p>
-            <?php the_content(); ?>
-        </p>
-    </div>
+<article id="post-<?php the_ID(); ?>" <?php post_class($post_class); ?>>
+    <h1>
+        <?php the_title(); ?>
+    </h1>
+    <?php the_content(); ?>
 </article>
-
