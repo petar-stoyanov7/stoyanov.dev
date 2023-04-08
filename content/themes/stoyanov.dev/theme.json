@@ -4,8 +4,66 @@
     "appearanceTools": true,
     "devLabel": false,
     "layout": {
-      "contentSize": "1200px",
+      "contentSize": "clamp(200px, 87.5vw, 1468px)",
       "wideSize": "1600px"
+    },
+    "spacing": {
+      "blockGap": true,
+      "margin": true,
+      "padding": true,
+      "spacingScale": {
+        "steps": 0
+      },
+      "spacingSizes": [
+        {
+          "size": "clamp(24px, 2.04vw, 30px)",
+          "slug": "small",
+          "name": "small"
+        },
+        {
+          "size": "clamp(40px, 3.406vw, 50px)",
+          "slug": "medium",
+          "name": "medium"
+        },
+        {
+          "size": "clamp(60px, 5.11vw, 75px)",
+          "slug": "large",
+          "name": "large"
+        },
+        {
+          "size": "clamp(80px, 6.81vw, 100px)",
+          "slug": "xlarge",
+          "name": "xlarge"
+        },
+        {
+          "size": "clamp(120px, 10.21vw, 150px)",
+          "slug": "huge",
+          "name": "huge"
+        },
+        {
+          "size": "clamp(136px, 11.58vw, 200px)",
+          "slug": "xhuge",
+          "name": "xhuge"
+        },
+        {
+          "size": "clamp(240px, 20.43vw, 300px)",
+          "slug": "giant",
+          "name": "giant"
+        },
+        {
+          "size": "clamp(280px, 23.84vw, 350px)",
+          "slug": "xgiant",
+          "name": "xgiant"
+        }
+      ],
+      "units": [
+        "%",
+        "px",
+        "em",
+        "rem",
+        "vh",
+        "vw"
+      ]
     },
     "color": {
       "defaultPalette": false,
@@ -23,11 +81,6 @@
         },
         {
           "slug": "white",
-          "color": "#fefefe",
-          "name": "White"
-        },
-        {
-          "slug": "background",
           "color": "#fefefe",
           "name": "White"
         },
@@ -64,42 +117,150 @@
       ]
     },
     "typography": {
+      "dropCap": false,
+      "fluid": true,
+      "fontFamilies": [
+        {
+          "fontFace": [
+            {
+              "fontFamily": "Open Sans",
+              "fontStretch": "normal",
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "src": [
+                "file:./dist/fonts/open-sans/OpenSans-Regular.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Open Sans",
+              "fontStretch": "normal",
+              "fontStyle": "italic",
+              "fontWeight": "400",
+              "src": [
+                "file:./dist/fonts/open-sans/OpenSans-RegularItalic.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Open Sans",
+              "fontStretch": "medium",
+              "fontStyle": "normal",
+              "fontWeight": "500",
+              "src": [
+                "file:./dist/fonts/open-sans/OpenSans-Medium.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Open Sans",
+              "fontStretch": "medium",
+              "fontStyle": "normal",
+              "fontWeight": "500",
+              "src": [
+                "file:./dist/fonts/open-sans/OpenSans-MediumItalic.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Open Sans",
+              "fontStretch": "semi-bold",
+              "fontStyle": "normal",
+              "fontWeight": "600",
+              "src": [
+                "file:./dist/fonts/open-sans/OpenSans-SemiBold.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Open Sans",
+              "fontStretch": "semi-bold",
+              "fontStyle": "normal",
+              "fontWeight": "600",
+              "src": [
+                "file:./dist/fonts/open-sans/OpenSans-SemiBoldItalic.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Open Sans",
+              "fontStretch": "bold",
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "src": [
+                "file:./dist/fonts/open-sans/OpenSans-Bold.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Open Sans",
+              "fontStretch": "bold",
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "src": [
+                "file:./dist/fonts/open-sans/OpenSans-BoldItalic.woff2"
+              ]
+            }
+          ],
+          "fontFamily": "\"Open Sans\", sans-serif",
+          "name": "Open Sans",
+          "slug": "open-sans"
+        },
+        {
+          "fontFace": [
+            {
+              "fontFamily": "Play",
+              "fontStretch": "normal",
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "src": [
+                "file:./dist/fonts/play/Play-Regular.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Play",
+              "fontStretch": "bold",
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "src": [
+                "file:./dist/fonts/play/Play-Bold.woff2"
+              ]
+            }
+          ],
+          "fontFamily": "\"Play\", sans-serif",
+          "name": "Play",
+          "slug": "play"
+        }
+      ],
       "fontSizes": [
         {
           "fluid": {
-            "min":"24px",
-            "max":"48px"
+            "min":"48px",
+            "max":"60px"
           },
           "slug": "headingone",
-          "size": "48px"
+          "size": "60px"
         },
         {
           "fluid":  {
-            "min": "20px",
-            "max": "40px"
+            "min": "40px",
+            "max": "50px"
           },
           "slug": "headingtwo",
+          "size": "50px"
+        },
+        {
+          "fluid":  {
+            "min": "32px",
+            "max": "40px"
+          },
+          "slug": "headingthree",
           "size": "40px"
         },
         {
           "fluid":  {
-            "min": "19px",
-            "max": "31px"
-          },
-          "slug": "headingthree",
-          "size": "31px"
-        },
-        {
-          "fluid":  {
-            "min": "18px",
-            "max": "25px"
+            "min": "24px",
+            "max": "30px"
           },
           "slug": "headingfour",
-          "size": "25px"
+          "size": "30px"
         },
         {
           "fluid":  {
-            "min": "17px",
+            "min": "16px",
             "max": "20px"
           },
           "slug": "headingfive",
@@ -115,22 +276,6 @@
         }
       ]
     },
-    "settings": {
-      "layout": {
-        "contentSize": "clamp(200px, 75vw, 1468px)",
-        "wideSize": "1600px"
-      },
-      "spacing": {
-        "margin": false,
-        "padding": false,
-        "blockGap": true
-      }
-    },
-    "styles": {
-      "spacing": {
-        "blockGap": "30px"
-      }
-    },
     "gutenberg": {
       "blocks": {
         "path": "lib/blocks",
@@ -139,6 +284,59 @@
         ],
         "dynamic_blocks": {}
       }
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var(--wp--preset--color--base)",
+      "text": "var(--wp--preset--color--primary)"
+    },
+    "elements": {
+      "h1": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--headingone)"
+        }
+      },
+      "h2": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--headingtwo)"
+        }
+      },
+      "h3": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--headingthree)"
+        }
+      },
+      "h4": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--headingfour)"
+        }
+      },
+      "h5": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--headingfive)"
+        }
+      },
+      "h6": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--headingsix)"
+        }
+      },
+      "heading": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--play)",
+          "fontWeight": "700",
+          "lineHeight": "1.5"
+        }
+      }
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--open-sans)",
+      "fontSize": "var(--wp--preset--font-size--paragraph)",
+      "lineHeight": "1.4"
+    },
+    "spacing": {
+      "blockGap": "30px"
     }
   }
 }

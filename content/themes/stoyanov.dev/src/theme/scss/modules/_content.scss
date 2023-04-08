@@ -78,16 +78,18 @@ main {
   article.ps-single a,
   article.page a:not(.ps-archive__link),
   article.ps-none a,
-  h1>a,
-  h2>a,
-  h3>a,
-  h4>a,
-  h5>a,
-  h6>a,
+  h1:not(.ps-archive__title) > a,
+  h2:not(.ps-archive__title) > a,
+  h3:not(.ps-archive__title) > a,
+  h4:not(.ps-archive__title) > a,
+  h5:not(.ps-archive__title) > a,
+  h6:not(.ps-archive__title) > a,
   {
     border-bottom: 2px solid $medium-gray;
     background-color: $lighter-gray;
     transition: all 0.2s ease-in-out;
+		color: var(--wp--preset--color--black);
+		text-decoration: none;
 
     &:hover {
       background-color: $light-gray;
@@ -128,8 +130,10 @@ main {
     height: 35px;
     background-size: contain;
     background-repeat: no-repeat;
+		color: var(--wp--preset--color--black);
     margin-right: 5px;
     border-bottom: none;
+		text-decoration: none;
 
     &.social-facebook {
       background-image: $social-facebook;
