@@ -1,51 +1,51 @@
 .ps-archives {
-  &__container {
-    margin-bottom: rem-calc(20);
-  }
+	&__container {
+		margin-bottom: rem-calc(20);
+	}
 
-  &__title {
-    width: 100%;
-    margin-bottom: rem-calc(20);
-  }
+	&__title {
+		width: 100%;
+		margin-bottom: rem-calc(20);
+	}
 }
 
 .ps-archive {
-  clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%);
-  transition: all 0.3s ease-in-out;
+	clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%);
+	transition: all 0.3s ease-in-out;
 	height: 100%;
-  //min-height: 440px;
-  overflow: hidden;
+	//min-height: 440px;
+	overflow: hidden;
 	background-color: #dff5ff;
 
 
-  figure {
-    width: 100%;
-    height: 40%;
-    background-color: #eff6ef;
-    overflow: hidden;
+	figure {
+		width: 100%;
+		height: 40%;
+		background-color: #eff6ef;
+		overflow: hidden;
 
-    @include breakpoint(large) {
-      background-color: $white;
-    }
+		@include breakpoint(large) {
+			background-color: $white;
+		}
 
-    img {
-      height: 100%;
-      width: auto;
-      object-fit: cover;
+		img {
+			height: 100%;
+			width: auto;
+			object-fit: cover;
 
-      @include breakpoint(huge) {
-        height: 115%;
-      }
-      @include breakpoint(xhuge) {
-        height: 100%;
-      }
-    }
-  }
+			@include breakpoint(huge) {
+				height: 115%;
+			}
+			@include breakpoint(xhuge) {
+				height: 100%;
+			}
+		}
+	}
 
-  &__text {
-    padding: clamp(10px, 15px, 20px);
-    height: 100%;
-  }
+	&__text {
+		padding: clamp(10px, 15px, 20px);
+		height: 100%;
+	}
 
 	.ps-archive__title.wp-block-post-title {
 		line-height: 1.1;
@@ -60,31 +60,79 @@
 		}
 	}
 
-  &__title {
-    min-height: 65px;
-    font-size: 30px;
-    font-weight: 700;
-    color: $black;
-    line-height: 1.1;
-  }
+	&__title {
+		min-height: 65px;
+		font-size: 30px;
+		font-weight: 700;
+		color: $black;
+		line-height: 1.1;
 
-  &:hover {
+		&:hover {
+			background-color: transparent;
+			border: none;
+		}
+	}
+
+	&:hover {
 		margin-top: -2px;
 		margin-left: -2px;
 
-    .ps-archive__text {
-      background-color: #dffaff;
-    }
-  }
+		.ps-archive__text {
+			background-color: #dffaff;
+		}
+	}
+
+	&__pagination.wp-block-query-pagination {
+
+		a.wp-block-query-pagination-previous,
+		a.wp-block-query-pagination-next {
+			padding: 3px 10px;
+			font-weight: 700;
+			background-color: transparent;
+			color: $black;
+			border: none;
+
+			&:hover {
+				background-color: $light-gray;
+				border: none;
+			}
+		}
+
+		.wp-block-query-pagination-numbers {
+
+
+			.page-numbers {
+				margin-right: 5px;
+				padding: 3px 10px;
+				background-color: transparent;
+				cursor: default;
+				border: none;
+
+				&:hover {
+					background-color: $light-gray;
+					border: none;
+				}
+
+				&.current {
+					background-color: $black;
+					color: $white;
+
+					&:hover {
+						background-color: $black;
+					}
+				}
+			}
+		}
+	}
 }
 
 .ps-search {
-  clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 10% 100%, 0 90%);
-  min-height: 250px;
+	clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 10% 100%, 0 90%);
+	min-height: 250px;
 
-  .ps-archive__text {
-    padding: 15px;
-  }
+	.ps-archive__text {
+		padding: 15px;
+	}
 
 	& * {
 		text-decoration: none;
@@ -93,14 +141,14 @@
 }
 
 .ps-none {
-  background-color: #fff2f2;
-  padding: 20px;
+	background-color: #fff2f2;
+	padding: 20px;
 }
 
 //search
 .ps-searches {
-  &__title {
-    width: 100%;
-    margin-bottom: 20px;
-  }
+	&__title {
+		width: 100%;
+		margin-bottom: 20px;
+	}
 }

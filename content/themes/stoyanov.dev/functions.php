@@ -29,5 +29,8 @@ require_once 'lib/responsive-images.php';
 /** Theme Support */
 require_once 'lib/theme-support.php';
 
+/** Archive */
+require_once 'lib/archive.php';
+
 /** Custom theme Gutenberg blocks */
 require_once 'lib/blocks/index.php';
