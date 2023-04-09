@@ -2,9 +2,6 @@
 @import 'settings';
 @import 'node_modules/foundation-sites/scss/foundation';
 
-/* Helpers */
-@import 'helpers/inlined_images';
-
 /* Foundation */
 @include foundation-xy-grid-classes;
 @include foundation-accordion;
@@ -18,6 +15,11 @@
 @include foundation-top-bar;
 @include foundation-visibility-classes;
 @include foundation-flex-classes;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+
+/* Helpers */
+@import 'helpers/inlined_images';
 
 /* Global */
 @import 'global/site-header';

@@ -360,7 +360,7 @@ if (!function_exists('ps_gallery')) :
     add_shortcode('gallery', 'ps_gallery');
 endif;
 
-class ps_Top_Bar_Walker extends Walker_Nav_Menu
+class ps_top_bar_walker extends Walker_Nav_Menu
 {
     function start_lvl(&$output, $depth = 0, $args = array())
     {
@@ -369,7 +369,7 @@ class ps_Top_Bar_Walker extends Walker_Nav_Menu
     }
 }
 
-class ps_Mobile_Walker extends Walker_Nav_Menu
+class ps_mobile_walker extends Walker_Nav_Menu
 {
     function start_lvl(&$output, $depth = 0, $args = array())
     {

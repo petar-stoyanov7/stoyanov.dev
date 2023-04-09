@@ -32,7 +32,7 @@ function headerNav()
             'theme_location' => 'top-bar-r',
             'depth'          => 3,
             'fallback_cb'    => false,
-            'walker'         => new ps_Top_Bar_Walker(),
+            'walker'         => new ps_top_bar_walker(),
         )
     );
 }
@@ -50,7 +50,7 @@ function mobileNav()
             'theme_location' => 'mobile-nav',
             'items_wrap'     => '<ul id="%1$s" class="%2$s" data-accordion-menu data-submenu-toggle="true">%3$s</ul>',
             'fallback_cb'    => false,
-            'walker'         => new ps_Mobile_Walker(),
+            'walker'         => new ps_mobile_walker(),
         )
     );
 }
@@ -70,7 +70,7 @@ function ps_footer_nav()
             'theme_location' => 'footer-nav',
             'depth'          => 1,
             'fallback_cb'    => false,
-            'walker'         => new ps_Top_Bar_Walker(),
+            'walker'         => new ps_top_bar_walker(),
         )
     );
 }
