@@ -3,6 +3,7 @@
 @import 'node_modules/foundation-sites/scss/foundation';
 
 /* Foundation */
+@include foundation-global-styles;
 @include foundation-xy-grid-classes;
 @include foundation-accordion;
 @include foundation-accordion-menu;

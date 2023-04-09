@@ -152,7 +152,7 @@
             {
               "fontFamily": "Open Sans",
               "fontStretch": "medium",
-              "fontStyle": "normal",
+              "fontStyle": "italic",
               "fontWeight": "500",
               "src": [
                 "file:./dist/fonts/open-sans/OpenSans-MediumItalic.woff2"
@@ -170,7 +170,7 @@
             {
               "fontFamily": "Open Sans",
               "fontStretch": "semi-bold",
-              "fontStyle": "normal",
+              "fontStyle": "italic",
               "fontWeight": "600",
               "src": [
                 "file:./dist/fonts/open-sans/OpenSans-SemiBoldItalic.woff2"
@@ -188,7 +188,7 @@
             {
               "fontFamily": "Open Sans",
               "fontStretch": "bold",
-              "fontStyle": "normal",
+              "fontStyle": "italic",
               "fontWeight": "700",
               "src": [
                 "file:./dist/fonts/open-sans/OpenSans-BoldItalic.woff2"
