@@ -31,17 +31,14 @@ $title = 'Search for "' . get_search_query() . '"';
                 <?php endif; ?>
             </div>
 
-            <?php /* Display navigation to next/previous pages when applicable */ ?>
             <div class="grid-x">
                 <div class="cell small-6 small-offset-3">
-                    <?php
-                    if (function_exists('hlebarovpress_pagination')) :
-                        hlebarovpress_pagination();
-                    elseif (is_paged()) :
-                        ?>
+                    <?php if (function_exists('ps_pagination')) : ?>
+                        <?php ps_pagination(); ?>
+                    <?php elseif (is_paged()) : ?>
                         <nav id="post-nav">
-                            <div class="post-previous"><?php next_posts_link(__('&larr; Older posts', 'hlebarovpress')); ?></div>
-                            <div class="post-next"><?php previous_posts_link(__('Newer posts &rarr;', 'hlebarovpress')); ?></div>
+                            <div class="post-previous"><?php next_posts_link("Older posts"); ?></div>
+                            <div class="post-next"><?php previous_posts_link("Newer posts &rarr;"); ?></div>
                         </nav>
                     <?php endif; ?>
                 </div>

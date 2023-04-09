@@ -9,24 +9,14 @@
 
 ?>
 
-<article class="cell ps-archive ps-none">
+<article class="cell ps-archive ps-none code-template">
     <header class="page-header">
         <h2 class="page-title">
             <?php _e('Nothing Found', 'ps'); ?>
         </h2>
     </header>
     <div class="page-content">
-        <?php if (is_home() && current_user_can('publish_posts')) : ?>
-            <p>
-                <?php
-                /* translators: %1$s: new post url */
-                printf(
-                    __('Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'ps'),
-                    admin_url('post-new.php')
-                );
-                ?>
-            </p>
-        <?php elseif (is_search()) : ?>
+        <?php if (is_search()) : ?>
             <p>
                 We couldn't find what you're looking for.
             </p>

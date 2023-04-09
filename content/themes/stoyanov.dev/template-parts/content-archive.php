@@ -15,7 +15,7 @@ $excerpt = get_the_excerpt($postId);
 $excerpt = wp_trim_words($excerpt, 30, '...');
 ?>
 
-<article class="cell ps-archive">
+<article class="cell ps-archive code-template">
 	<a
 		href="<?php echo get_the_permalink($postId); ?>"
 		class="ps-archive__link"

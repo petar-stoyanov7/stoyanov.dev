@@ -4,7 +4,7 @@
     "appearanceTools": true,
     "devLabel": false,
     "layout": {
-      "contentSize": "clamp(200px, 87.5vw, 1468px)",
+      "contentSize": "clamp(200px, 87.5vw, 1400px)",
       "wideSize": "1600px"
     },
     "spacing": {
@@ -73,11 +73,6 @@
           "slug": "primary",
           "color": "#0a0a0a",
           "name": "Primary"
-        },
-        {
-          "slug": "black",
-          "color": "#0a0a0a",
-          "name": "Black"
         },
         {
           "slug": "white",

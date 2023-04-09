@@ -71,7 +71,7 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-width: rem-calc(1400);
 $global-lineheight: 1.5;
 $foundation-palette: (
 	primary: #001803,
@@ -80,13 +80,12 @@ $foundation-palette: (
 	warning: #ff8000,
 	alert: #e70c0c,
 );
-$lighter-gray: #f5f5f5;
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
-$medium-m-gray: #adadad;
-$dark-gray: #8a8a8a;
-$darker-gray: #3d3d3d;
-$darkest-gray: #3d3d3d;
+$lighter-gray: var(--wp--preset--color--lighter-gray);
+$light-gray: var(--wp--preset--color--light-gray);
+$medium-gray: var(--wp--preset--color--medium-gray);
+$medium-m-gray: var(--wp--preset--color--medium-m-gray);
+$dark-gray: var(--wp--preset--color--dark-gray);
+$darker-gray: var(--wp--preset--color--darker-gray);
 $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;

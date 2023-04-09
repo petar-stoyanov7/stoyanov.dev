@@ -17,6 +17,14 @@
 	overflow: hidden;
 	background-color: #dff5ff;
 
+  &__link {
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-color: #dff5ff;
+		text-decoration: none;
+		color: $black;
+	}
 
 	figure {
 		width: 100%;
@@ -30,7 +38,7 @@
 
 		img {
 			height: 100%;
-			width: auto;
+			width: 100%;
 			object-fit: cover;
 
 			@include breakpoint(huge) {
@@ -47,13 +55,16 @@
 		height: 100%;
 	}
 
-	.ps-archive__title.wp-block-post-title {
+	.ps-archive__title.wp-block-post-title,
+	.ps-archive__title {
 		line-height: 1.1;
 		color: var(--wp--preset--color--black);
 		padding: 0 10px;
-		background-color: none;
+		background-color: transparent;
+		text-decoration: none;
 
-		& > a {
+		& > a,
+		& > a:hover {
 			background-color: transparent;
 			text-decoration: none;
 			border: none;
@@ -74,8 +85,7 @@
 	}
 
 	&:hover {
-		margin-top: -2px;
-		margin-left: -2px;
+		transform: translate(-10px, -10px);
 
 		.ps-archive__text {
 			background-color: #dffaff;
@@ -122,6 +132,15 @@
 					}
 				}
 			}
+		}
+	}
+
+	&.code-template {
+		min-height: 440px;
+		height: auto;
+
+		h3 {
+			margin: 0 0 8px;
 		}
 	}
 }
