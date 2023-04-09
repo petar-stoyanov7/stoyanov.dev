@@ -57,6 +57,7 @@
 				font-weight: 700;
 				font-style: normal;
 				text-decoration: none;
+				line-height: 1;
 
 				&:after {
 					content: none;
@@ -233,10 +234,24 @@
 		display: flex;
 		flex-direction: row;
 		height: 100%;
+		outline: none;
+		border: none;
+
+		&:focus,
+		&:focus > input,
+		& > input:focus {
+			outline: none;
+		}
 
 		input[type="text"] {
+			width: 100%;
 			border: 1px solid $black;
 			margin: 0 5px 0 0;
+			padding: 8px;
+
+			&:active, &:focus {
+				border: none;
+			}
 		}
 
 		button {
@@ -328,12 +343,16 @@
 			margin: 0 0 10px;
 
 			a[role="menuitem"] {
+				display: block;
+				padding: 11px 16px;
 				border-top: 2px solid $medium-gray;
 				border-right: 2px solid $medium-gray;
 				border-left: 3px solid $light-gray;
 				border-bottom: 3px solid $light-gray;
+				color: $black;
 				background-color: $white;
 				font-weight: 700;
+				text-decoration: none;
 			}
 
 			&.is-active > a[role="menuitem"] {
@@ -343,6 +362,7 @@
 
 			.submenu {
 				margin-top: 10px;
+				list-style-type: none;
 			}
 		}
 	}
