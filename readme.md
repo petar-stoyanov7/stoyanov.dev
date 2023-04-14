@@ -1,4 +1,4 @@
-# stoyanov.dev
+# Petar Stoyanov personal site
 
 ## Overview
 
