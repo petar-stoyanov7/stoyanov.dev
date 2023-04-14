@@ -1,7 +1,6 @@
 .DS_Store
 node_modules
 npm-debug.log
-dist
 *.sass-cache*
 *.log
 .idea/
@@ -10,5 +9,6 @@ packaged/
 wpcs/
 vendor/
 lib/blocks/build
-library/blocks/build
 package-lock.json
+#src folder
+/src/
