@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "pest/points-map",
+  "title": "Example Block",
+  "version": "0.0.1",
+  "category": "theme",
+  "parent": [],
+  "icon": "edit",
+  "description": "This block doesn't do anything. It's used as a tempalte for future blocks",
+  "keywords": [],
+  "attributes": {},
+  "textdomain": "pest",
+  "editorScript": "file:./index.js"
+}

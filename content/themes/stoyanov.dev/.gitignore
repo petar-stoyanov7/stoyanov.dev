@@ -8,7 +8,6 @@ npm-debug.log
 packaged/
 wpcs/
 vendor/
-lib/blocks/build
 package-lock.json
 #src folder
 /src/
