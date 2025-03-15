@@ -1,0 +1,22 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ps/accordion",
+	"title": "Accordion",
+	"version": "0.1.0",
+	"category": "theme",
+	"parent": [],
+	"icon": "edit",
+	"description": "This block doesn't do anything. It's used as a tempalte for future blocks",
+	"keywords": ["accordion", "hidden", "collapse", "collapsable"],
+	"attributes": {
+		"summary": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"textdomain": "pest",
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"editorStyle": "file:./style-index.css"
+}

@@ -1,0 +1,51 @@
+.ps-accordion {
+	padding: 5px;
+	border-radius: 5px;
+	border: 2px solid #ff9d9d;
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+
+	&:hover {
+		background-color: #fffbfb;
+	}
+
+	&__summary {
+		font-size: 20px;
+		position: relative;
+		list-style-type: none;
+		padding-left: 25px;
+
+		&::before {
+			position: absolute;
+			left: 2px;
+			top: calc(50% - 6px);
+			width: 8px;
+			height: 8px;
+			transform: rotate(45deg);
+			content: '';
+			border-right: 3px solid #622a2a;
+			border-top: 3px solid #622a2a;
+			transition: all .3s ease-in-out;
+		}
+	}
+
+	&[open] {
+		border: 2px solid #3e9b59;
+	}
+
+	&[open] &__summary::before {
+		transform: rotate(135deg);
+		border-color: #2a623b;
+	}
+
+
+	&__container {
+		border: 1px solid #ff9d9d;
+		border-radius: 5px;
+	}
+
+	&__content {
+		margin-left: 15px;
+	}
+}
+

@@ -275,7 +275,8 @@
       "blocks": {
         "path": "lib/blocks",
         "autoload": [
-          "build/map"
+          "build/map",
+          "build/accordion"
         ],
         "dynamic_blocks": {}
       }
