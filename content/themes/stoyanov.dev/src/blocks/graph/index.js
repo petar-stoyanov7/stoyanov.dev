@@ -76,7 +76,7 @@ registerBlockType(
 									min={0}
 									max={10}
 									onChange={val => {
-										setAttributes({level: val});
+										setAttributes({level: parseFloat(val)});
 									}}
 								/>
 							</div>
