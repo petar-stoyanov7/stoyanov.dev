@@ -276,7 +276,8 @@
         "path": "lib/blocks",
         "autoload": [
           "build/map",
-          "build/accordion"
+          "build/accordion",
+          "build/graph"
         ],
         "dynamic_blocks": {}
       }

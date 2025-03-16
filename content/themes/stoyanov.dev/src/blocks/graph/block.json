@@ -1,18 +1,22 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 2,
-	"name": "ps/accordion",
-	"title": "Accordion",
+	"name": "ps/chart",
+	"title": "Chart",
 	"version": "0.1.0",
 	"category": "theme",
 	"parent": [],
 	"icon": "edit",
-	"description": "Custom accordion block",
-	"keywords": ["accordion", "hidden", "collapse", "collapsable"],
+	"description": "Custom chart block",
+	"keywords": ["chart", "graph", "custom chart"],
 	"attributes": {
-		"summary": {
+		"title": {
 			"type": "string",
 			"default": ""
+		},
+		"level": {
+			"type": "integer",
+			"default": 5
 		}
 	},
 	"textdomain": "pest",

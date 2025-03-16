@@ -23,7 +23,6 @@ registerBlockType(
 		attributes,
 		supports,
 		edit: (props) => {
-			console.log('p', props);
 			const {
 				attributes: {summary},
 				setAttributes

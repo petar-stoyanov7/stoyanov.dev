@@ -1,0 +1,49 @@
+.ps-chart {
+	margin-bottom: 10px;
+
+	&__title {
+		font-size: 18px;
+		font-weight: 600;
+		margin: 0;
+	}
+
+	&__container {
+		display: flex	;
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+
+	&__visual {
+		width: calc(90% - 10px);
+		background-color: #efefef;
+		height: 25px;
+		padding: 5px;
+		margin-right: 10px;
+	}
+
+	&__bar {
+		height: 100%;
+	}
+
+	&__number {
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 25px;
+	}
+}
+
+.ps-chart-admin {
+	margin-bottom: 10px;
+
+	&__inputs {
+		display: flex	;
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+
+	&__input {
+		margin-right: 10px;
+		border: 1px solid #cccccc;
+		border-radius: 3px;
+	}
+}
