@@ -20,7 +20,7 @@
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
             <div class="cell small-12 large-8 ps-footer__copyright">
-                Copyright 2023 Petar Stoyanov.
+                Copyright 2025 Petar Stoyanov.
             </div>
             <div class="cell small-12 large-4 ps-footer__contacts">
                 <a
