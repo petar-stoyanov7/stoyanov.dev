@@ -10,7 +10,7 @@
 
 get_header(); ?>
 
-<main class="main-content-full-width">
+<main class="ps-content main-content-full-width">
 	<?php while (have_posts()) : the_post(); ?>
 		<?php get_template_part('template-parts/content', 'page'); ?>
 	<?php endwhile; ?>

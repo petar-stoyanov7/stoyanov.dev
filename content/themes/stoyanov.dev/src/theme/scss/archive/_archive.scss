@@ -26,9 +26,9 @@
 		color: $black;
 	}
 
-	figure {
+	&__header {
 		width: 100%;
-		height: 40%;
+		height: 50%;
 		background-color: #eff6ef;
 		overflow: hidden;
 
@@ -59,7 +59,7 @@
 	.ps-archive__title {
 		line-height: 1.1;
 		color: var(--wp--preset--color--black);
-		padding: 0 10px;
+		padding: 0 10px !important;
 		background-color: transparent;
 		text-decoration: none;
 
@@ -135,14 +135,15 @@
 		}
 	}
 
-	&.code-template {
-		min-height: 440px;
-		height: auto;
-
-		h3 {
-			margin: 0 0 8px;
-		}
-	}
+	//todo: no idea why it was. Leaving it just...
+	//&.code-template {
+	//	min-height: 440px;
+	//	height: auto;
+	//
+	//	h3 {
+	//		margin: 0 0 8px;
+	//	}
+	//}
 }
 
 .ps-search {
